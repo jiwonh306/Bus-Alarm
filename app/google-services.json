@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "329768287720",
+    "project_id": "bus-alarm-64875",
+    "storage_bucket": "bus-alarm-64875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329768287720:android:a629318be97b8524e1b85d",
+        "android_client_info": {
+          "package_name": "com.example.busalarm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7nij7Ot5Taiv8W72ewaOO7ffDk_E5Sd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
