@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -22,6 +23,10 @@
             android:name=".SignUpActivity"
             android:exported="true">
         </activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="3f9d0ec283a8053661dec680ebb42802"/>
 
         <activity
             android:name=".MainActivity"
@@ -52,6 +57,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ApiExplorer"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
 
     </application>
 

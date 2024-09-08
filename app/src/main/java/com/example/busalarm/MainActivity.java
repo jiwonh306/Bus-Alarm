@@ -3,6 +3,7 @@ package com.example.busalarm;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -26,6 +28,7 @@ import com.kakao.sdk.user.UserApiClient;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.net.URL;
+import java.util.ArrayList;
 
 import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText login_id, login_pw;
     private FirebaseAuth mAuth; // FirebaseAuth 추가
     private NetworkThread thread;
+    private Button bus_btn;
 
 
 
@@ -130,6 +134,16 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
             startActivity(intent);
         });
+
+        bus_btn=findViewById(R.id.busBtn);
+        bus_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("bus click");
+                Intent intent = new Intent(MainActivity.this, ApiExplorer.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -159,5 +173,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return null;
     };
+
+
 
 }
