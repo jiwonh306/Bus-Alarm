@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen>
+    <busLocationList>
+        <endBus>0</endBus>
+        <lowPlate>0</lowPlate>
+        <plateNo>경기70사1109</plateNo>
+        <plateType>3</plateType>
+        <remainSeatCnt>38</remainSeatCnt>
+        <routeId>233000031</routeId>
+        <stationId>202000217</stationId>
+        <stationSeq>60</stationSeq>
+    </busLocationList>
+    <busLocationList>
+        <endBus>0</endBus>
+        <lowPlate>0</lowPlate>
+        <plateNo>경기70사1139</plateNo>
+        <plateType>3</plateType>
+        <remainSeatCnt>42</remainSeatCnt>
+        <routeId>233000031</routeId>
+        <stationId>200000321</stationId>
+        <stationSeq>8</stationSeq>
+    </busLocationList>
+    <busLocationList>
+        <endBus>0</endBus>
+        <lowPlate>0</lowPlate>
+        <plateNo>경기70사2949</plateNo>
+        <plateType>3</plateType>
+        <remainSeatCnt>42</remainSeatCnt>
+        <routeId>233000031</routeId>
+        <stationId>200000321</stationId>
+        <stationSeq>8</stationSeq>
+    </busLocationList>
+
+</PreferenceScreen>

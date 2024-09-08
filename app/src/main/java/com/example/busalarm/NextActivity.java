@@ -1,27 +1,22 @@
 package com.example.busalarm;
 
-import static androidx.core.view.ViewCompat.setOnApplyWindowInsetsListener;
+import android.os.Bundle;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.util.Log;
-
+import com.kakao.sdk.common.KakaoSdk;
 import com.kakao.vectormap.KakaoMap;
 import com.kakao.vectormap.KakaoMapReadyCallback;
 import com.kakao.vectormap.KakaoMapSdk;
 import com.kakao.vectormap.MapLifeCycleCallback;
 import com.kakao.vectormap.MapView;
-import com.kakao.sdk.common.KakaoSdk;
-
-import com.kakao.sdk.auth.model.OAuthToken;
-import com.kakao.sdk.user.UserApiClient;
-import com.kakao.sdk.user.model.User;
 
 public class NextActivity extends AppCompatActivity {
     MapView mapView;
     KakaoMap kakaoMap;
+    private final int PERMISSION_REQUEST_CODE = 1001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +26,8 @@ public class NextActivity extends AppCompatActivity {
         KakaoSdk.init(this, "3f9d0ec283a8053661dec680ebb42802");
 
         KakaoMapSdk.init(this, "3f9d0ec283a8053661dec680ebb42802");
+
+
 
         mapView = findViewById(R.id.map_view);
         mapView.start(new MapLifeCycleCallback() {
